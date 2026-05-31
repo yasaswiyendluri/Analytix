@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #0d1117;
+        color: #e6edf3;
+        display: flex;
+        height: 100vh;
+    }
+
+/* ================= SIDEBAR ================= */
+    .sidebar {
+        width: 220px;
+        background: #161b22;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        color: #43d861;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .tab-btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 8px;
+        background: none;
+        border: none;
+        color: #c9d1d9;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    .tab-btn {
+        background: #21262d;
+    }
+
+    .tab-btn.active {
+        background: #43d861;
+        color: white;
+    }
+
+    /* ================= MAIN ================= */
+    .main {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+    .content {
+        display: none;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .content.active {
+        display: block;
+    }
+
+    .card {
+        background: #161b22;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        overflow-x: auto;
+
+    }
+
+    /* ================= UPLOAD ================= */
+    .upload-box {
+        border: 2px dashed #30363d;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100%;
+        border-color: #58a6ff;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .file-label {
+        display: block;
+        cursor: pointer;
+        color: #8b949e;
+    }
+
+    .upload-btn {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        background: #43d861;
+        border: none;
+        color: white;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .upload-btn {
+        background: #43d861;
+    }
+
+    /* ================= TABLE SCROLL FIX ================= */
+    .table-container {
+        overflow-x: auto;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .table-container table {
+        min-width: 900px;
+        width: max-content;
+        border-collapse: collapse;
+    }
+
+    th {
+        background: #21262d;
+        color: #58a6ff;
+        font-weight: 600;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        background: #0d1117;
+        padding: 10px;
+    }
+
+    td, th {
+        border: 1px solid #30363d;
+        white-space: nowrap; 
+    }
+
+    tr td {
+        background: #161b22;
+    }

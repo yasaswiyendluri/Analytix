@@ -1,0 +1,71 @@
+Folder structure :
+
+Excel_Insights/
+│
+├── manage.py
+│
+├── portal/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── core/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py    (The logic part)
+│   ├── urls.py
+│   │
+│   ├── migrations/
+│   │
+│   ├── templates/         (THIS is your HTML folder)
+│   │   └── home.html
+│   │
+│   └── static/           (CSS )
+│
+├── myworld/
+│
+├── requirements.txt
+├── work.txt
+├── README.md
+└── db.sqlite3
+
+
+
+4 march:
+made changes in frontend design and connected backend to frontend
+minor changes are to be made later.
+
+7 march:
+made changes in views.py for better handling of column names,
+the problem is now fixed.
+
+
+
+Note:
+
+To run the project:
+Run `python manage.py runserver 8000` and open the link shown in the terminal.
+
+If running for the first time, install dependencies using `pip install -r requirements.txt`, then run `python manage.py runserver 8000` and open the link shown in the terminal.
+
+7 march:
+Completed Fixes
+Resolved heatmap issues, including incorrect column overwriting.
+Improved histogram generation by filtering out unnecessary columns (e.g., IDs and low-unique categorical features).
+
+Pending Issues / To Be Fixed
+Uploaded file name is not being displayed.
+Tables are showing misleading or inconsistent data.
+Download functionality needs to be implemented.
+
+11 March and 12 March:
+Changed the sidebar layout,I added more features, Had to make major
+changes in backend and some changes frontend too.
+
+14 March:
+Added graphs part and added the download buttons.
+Made changes in auto insights and cleaning part due to irrelevant data outputs.
